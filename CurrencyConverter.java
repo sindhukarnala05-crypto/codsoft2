@@ -23,7 +23,7 @@ public class CurrencyConverter {
         String target = sc.next().toUpperCase();
 
         if (!rates.containsKey(base) || !rates.containsKey(target)) {
-            System.out.println("❌ Invalid currency code.");
+            System.out.println("Invalid currency code.");
             sc.close();
             return;
         }
@@ -41,3 +41,4 @@ public class CurrencyConverter {
         sc.close();
     }
 }
+
